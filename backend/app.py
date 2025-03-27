@@ -758,4 +758,5 @@ def upload_file():
         return "Lütfen bir Word (.docx) dosyası yükleyin."
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.getenv('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)
