@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Dosyasından Dersleri Çıkarma</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .upload-form {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .upload-form input[type="file"] {
+            display: block;
+            margin: 0 auto 15px;
+            padding: 10px;
+            border: 2px dashed #3498db;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            font-size: 14px;
+            color: #7f8c8d;
+            cursor: pointer;
+            transition: border-color 0.3s ease;
+        }
+
+        .upload-form input[type="file"]:hover {
+            border-color: #2980b9;
+        }
+
+        .upload-form input[type="submit"] {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 16px;
+            font-weight: 500;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .upload-form input[type="submit"]:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+
+        .gpa-section, .gpa-requirements, .akts-warnings, .failed-courses, .failed-electives, .elective-bm-summary, .graduation-status {
+            margin-top: 25px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f8f9fa;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        h3 {
+            color: #2c3e50;
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        h3 i {
+            margin-right: 10px;
+            color: #3498db;
+        }
+
+        .gpa-section p {
+            font-size: 18px;
+            font-weight: 600;
+            color: #2ecc71;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 12px 15px;
+            margin-bottom: 8px;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: background-color 0.3s ease;
+        }
+
+        .gpa-requirements li, .akts-warnings li, .failed-electives li {
+            background-color: #ffe6e6;
+            color: #c0392b;
+            border-left: 4px solid #e74c3c;
+        }
+
+        .elective-bm-summary li {
+            background-color: #e6f0ff;
+            color: #2980b9;
+            border-left: 4px solid #3498db;
+        }
+
+        .failed-courses .semester-section h4 {
+            color: #7f8c8d;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .failed-courses li {
+            background-color: #fff1f1;
+            color: #c0392b;
+            border-left: 4px solid #e74c3c;
+        }
+
+        .error-message {
+            color: #e74c3c;
+            font-weight: 500;
+            background-color: #ffe6e6;
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+        }
+
+        .error-message i {
+            margin-right: 10px;
+        }
+
+        .success-message {
+            color: #2ecc71;
+            font-weight: 500;
+            background-color: #e6ffe6;
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+        }
+
+        .success-message i {
+            margin-right: 10px;
+        }
+
+        .graduation-status .eligible {
+            color: #2ecc71;
+            font-weight: 500;
+            background-color: #e6ffe6;
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+        }
+
+        .graduation-status .not-eligible {
+            color: #e74c3c;
+            font-weight: 500;
+            background-color: #ffe6e6;
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+        }
+
+        .graduation-status .eligible i, .graduation-status .not-eligible i {
+            margin-right: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .upload-form input[type="submit"] {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+
+            h3 {
+                font-size: 18px;
+            }
+
+            li {
+                font-size: 13px;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Word Dosyasından Dersleri Çıkarma</h1>
+        <div class="upload-form">
+            <form method="POST" action="/upload" enctype="multipart/form-data">
+                <input type="file" name="file" accept=".docx" required>
+                <br>
+                <input type="submit" value="Yükle ve Çıkar">
+            </form>
+        </div>
+
+        {% if gpa is defined and gpa is not none %}
+            <div class="gpa-section">
+                <h3><i class="fas fa-graduation-cap"></i> Genel Not Ortalaması:</h3>
+                <p>{{ gpa | round(2) }}</p>
+            </div>
+        {% else %}
+
+        {% endif %}
+
+        {% if gpa_requirements %}
+            <div class="gpa-requirements">
+                <h3><i class="fas fa-exclamation-triangle"></i> Genel Not Ortalaması Durumu:</h3>
+                <ul>
+                    {% for requirement in gpa_requirements %}
+                        <li>{{ requirement.message }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+
+        {% if akts_warnings %}
+            <div class="akts-warnings">
+                <h3><i class="fas fa-exclamation-triangle"></i> AKTS Uyarıları:</h3>
+                <ul>
+                    {% for warning in akts_warnings %}
+                        <li><strong>{{ warning.semester }}:</strong> {{ warning.message }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+
+        {% if failed_courses %}
+            <div class="failed-courses">
+                <h3><i class="fas fa-times-circle"></i> Kaldığınız veya Eksik Dersler:</h3>
+                {% for semester in failed_courses | map(attribute='semester') | unique %}
+                    <div class="semester-section">
+                        <h4>{{ semester }}</h4>
+                        <ul>
+                            {% for course in failed_courses if course.semester == semester %}
+                                <li>{{ course.message }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+
+        {% if failed_elective_requirements %}
+            <div class="failed-electives">
+                <h3><i class="fas fa-exclamation-circle"></i> Seçmeli Ders Gereksinimlerinde Eksiklikler:</h3>
+                <ul>
+                    {% for requirement in failed_elective_requirements %}
+                        <li><strong>{{ requirement.semester }}:</strong> {{ requirement.message }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+
+        {% if graduation_status %}
+            <div class="graduation-status">
+                <h3><i class="fas fa-certificate"></i> Mezuniyet Durumu:</h3>
+                <p class="{{ 'eligible' if graduation_status.is_eligible else 'not-eligible' }}">
+                    <i class="fas {{ 'fa-check-circle' if graduation_status.is_eligible else 'fa-times-circle' }}"></i>
+                    {{ graduation_status.message }}
+                </p>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>

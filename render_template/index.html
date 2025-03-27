@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>تحليل Transcript</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; direction: rtl; }
+        .container { margin-top: 50px; }
+        .result { margin-top: 20px; color: green; }
+        .extracted-text { margin-top: 20px; text-align: right; white-space: pre-wrap; border: 1px solid #ccc; padding: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>رفع ملف Transcript (Word)</h1>
+        <form method="POST" action="/upload" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".docx" required>
+            <br><br>
+            <input type="submit" value="تحليل الملف">
+        </form>
+
+        {% if extracted_text %}
+            <div class="extracted-text">
+                <h3>النص المستخرج من الـ Word:</h3>
+                <p>{{ extracted_text }}</p>
+            </div>
+        {% endif %}
+
+        {% if result %}
+            <div class="result">
+                <h3>النتيجة: {{ result }}</h3>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
