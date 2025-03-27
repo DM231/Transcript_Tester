@@ -1,0 +1,109 @@
+﻿blinker==1.9.0
+click==8.1.8
+colorama==0.4.6
+Flask==3.1.0
+itsdangerous==2.2.0
+Jinja2==3.1.6
+MarkupSafe==3.0.2
+PyMuPDF==1.25.3
+Werkzeug==3.1.3
+
+
+BÖLÜMÜ Bilgisayar Mühendisliği
+PROGRAMI Bilgisayar Mühendisliği İ.Ö.
+TC KİMLİK NO 99759487828
+ÖĞRENCİ NUMARASI 201002225
+ADI SOYADI DIAA M. A. ABUANZA DIAA M. A. ABUANZA
+KAYIT TARİHİ 14.10.2020
+AYRILIŞ TARİHİ
+TRANSKR(cid:248)PT
+1. Yar(cid:213)y(cid:213)l 2. Yar(cid:213)y(cid:213)l
+Ders Kodu Ders Ad(cid:213) Kredi AKTS Harf Ders Kodu Ders Ad(cid:213) Kredi AKTS Harf
+AIB101 Atatürk (cid:248)lkeleri ve (cid:248)nk(cid:213)lap Tarihi I 2.0 2.0 BB AIB102 Atatürk (cid:248)lkeleri ve (cid:248)nk(cid:213)lap Tarihi II 2.0 2.0 AA
+BM101 Algoritmalar ve Programlama I 3.0 5.0 DD BM102 Algoritmalar ve Programlama II 3.0 5.0 CC
+BM103 Bilgisayar Mühendisliğine Giriş 2.0 2.0 CC BM104 Web Teknolojileri 3.0 5.0 CB
+BM105 Bilişim Teknolojileri 3.0 4.0 CC BM106 Olas(cid:213)l(cid:213)k ve (cid:248)statistik 3.0 4.0 CB
+BM107 Elektrik Devre Temelleri 3.0 4.0 AA FIZ102 Fizik II 3.0 5.0 DD
+FIZ101 Fizik I 3.0 4.0 BB ING102 (cid:248)ngilizce II 2.0 2.0 BB
+ING101 (cid:248)ngilizce I 2.0 2.0 BB MAT102 Matematik II 4.0 5.0 CB
+MAT101 Matematik I 4.0 6.0 AA TDB122 Türk Dili II 2.0 2.0 BB
+Toplam Toplam Toplam
+TDB121 Türk Dili I 2.0 2.0 BB Ortalama
+Kredi AKTSAğ(cid:213)rl(cid:213)kl(cid:213)
+Toplam Toplam Toplam
+Ortalama Dönem Sonu 22.0 30.0 85.50 2.85
+Kredi AKTSAğ(cid:213)rl(cid:213)kl(cid:213)
+Dönem Sonu 24.0 31.0 97.50 3.15 Genel 46.0 61.0 183.00 3.00
+Genel 24.0 31.0 97.50 3.15
+3. Yar(cid:213)y(cid:213)l 4. Yar(cid:213)y(cid:213)l
+Ders Kodu Ders Ad(cid:213) Kredi AKTS Harf Ders Kodu Ders Ad(cid:213) Kredi AKTS Harf
+BM203 Elektronik 4.0 5.0 DC BM204 Bilgisayar Organizasyonu 3.0 5.0 CB
+BM205 Nesneye Dayal(cid:213) Programlama 4.0 6.0 CB BM206 Say(cid:213)sal Elektronik 4.0 5.0 DC
+BM209 Say(cid:213)sal Analiz 3.0 4.0 CC BM208 Nesneye Dayal(cid:213) Analiz ve Tasar(cid:213)m 3.0 4.0 CB
+BM211 Diferansiyel Denklemler 4.0 5.0 DD BM210 Programlama Dillerinin Prensipleri 3.0 4.0 CC
+BM213 Lineer Cebir 3.0 3.0 BB BM212 Mesleki (cid:248)ngilizce 3.0 4.0 CC
+BM215 Ayr(cid:213)k (cid:248)şlemsel Yap(cid:213)lar 3.0 4.0 CC BM214 Veri Yap(cid:213)lar(cid:213) 3.0 5.0 CC
+US213 (cid:248)şletme Yönetimi 2.0 3.0 BA US227 Girişimcilik II 2.0 3.0 DD
+Toplam Toplam Toplam Toplam Toplam Toplam
+Ortalama Ortalama
+Kredi AKTSAğ(cid:213)rl(cid:213)kl(cid:213) Kredi AKTSAğ(cid:213)rl(cid:213)kl(cid:213)
+Dönem Sonu 23.0 30.0 79.50 2.65 Dönem Sonu 21.0 30.0 76.75 2.56
+Genel 69.0 91.0 262.50 2.88 Genel 90.0 121.0 339.25 2.80
+5. Yar(cid:213)y(cid:213)l 6. Yar(cid:213)y(cid:213)l
+Ders Kodu Ders Ad(cid:213) Kredi AKTS Harf Ders Kodu Ders Ad(cid:213) Kredi AKTS Harf
+BM301 Biçimsel Diller ve Soyut Makinalar 3.0 5.0 DC BM302 Bilgisayar Ağlar(cid:213) II 4.0 6.0 FF
+BM303 (cid:248)şaretler ve Sistemler 2.0 4.0 AA BM304 Mikroişlemciler 4.0 6.0 DD
+BM305 (cid:248)şletim Sistemleri 3.0 5.0 DC BM306 Sistem Programlama 2.0 5.0 DD
+BM307 Bilgisayar Ağlar(cid:213) I 3.0 5.0 CC BM308 Web Programlama 4.0 6.0 DC
+BM309 Veritaban(cid:213) Yönetim Sistemleri 4.0 6.0 CB BM310 Yaz(cid:213)l(cid:213)m Mühendisliği 3.0 4.0 CB
+BM399 Yaz Dönemi Staj(cid:213) I 0.0 2.0 YT MS331 Mühendislikte Temel Bilgiler 2.0 3.0 BA
+Toplam Toplam Toplam
+MS323 Betik Dilleri 2.0 3.0 CB Ortalama
+Kredi AKTSAğ(cid:213)rl(cid:213)kl(cid:213)
+Toplam Toplam Toplam
+Ortalama Dönem Sonu 19.0 30.0 58.00 1.93
+Kredi AKTSAğ(cid:213)rl(cid:213)kl(cid:213)
+Dönem Sonu 17.0 30.0 78.00 2.79 Genel 126.0 181.0 475.25 2.66
+Genel 107.0 151.0 417.25 2.80FAKÜLTESİ Mühendislik Fakültesi
+BÖLÜMÜ Bilgisayar Mühendisliği
+PROGRAMI Bilgisayar Mühendisliği İ.Ö.
+TC KİMLİK NO 99759487828
+ÖĞRENCİ NUMARASI 201002225
+ADI SOYADI DIAA M. A. ABUANZA DIAA M. A. ABUANZA
+KAYIT TARİHİ 14.10.2020
+AYRILIŞ TARİHİ
+TRANSKR(cid:248)PT
+7. Yar(cid:213)y(cid:213)l 8. Yar(cid:213)y(cid:213)l
+Ders Kodu Ders Ad(cid:213) Kredi AKTS Harf Ders Kodu Ders Ad(cid:213) Kredi AKTS Harf
+Bilgisayar Mühendisliği Proje
+BM401 2.0 3.0 AA BM469 Makine Öğrenmesine Giriş 3.0 5.0 CB
+Tasar(cid:213)m(cid:213)
+Programlanabilir Mant(cid:213)k
+BM442 Görsel Programlama 3.0 5.0 CB BM489 3.0 5.0 DC
+Denetleyiciler
+LLM tabanl(cid:213) Soru­Cevap
+BM455 Bulan(cid:213)k Mant(cid:213)ğa Giriş 3.0 5.0 BB MTH401 3.0 5.0 DD
+Sistemleri
+Toplam Toplam Toplam
+BM478 Python (cid:248)le Veri Bilimine Giriş 3.0 5.0 AA Ortalama
+Kredi AKTSAğ(cid:213)rl(cid:213)kl(cid:213)
+BM493 Veri (cid:248)letişimi 3.0 5.0 DD Dönem Sonu 9.0 15.0 36.25 2.42
+BM496 Bilgi Mühendisliği ve Büyük Veriye 3.0 5.0 FF Genel 152.0 226.0 584.75 2.63
+Giriş
+BM499 Yaz Dönemi Staj(cid:213) II 0.0 2.0 YT
+Toplam Toplam Toplam
+Ortalama
+Kredi AKTSAğ(cid:213)rl(cid:213)kl(cid:213)
+Dönem Sonu 17.0 30.0 73.25 2.62
+Genel 143.0 211.0 548.50 2.65
+Tarih
+11.03.2025 04:46
+Staj Durumu : Staj bilgisi bulunamad(cid:213).
+Akademik Durum : (cid:248)lişik kesme sebebi bulunamad(cid:213).
+Haz(cid:213)rl(cid:213)k Durumu : Haz(cid:213)rl(cid:213)k Okumam(cid:213)ş
+Not :
+(*) ile işaretlenen dersler Erasmus Program(cid:213) kapsam(cid:213)nda al(cid:213)nm(cid:213)şt(cid:213)r.
+(**) ile işaretlenen dersler Farabi Program(cid:213) kapsam(cid:213)nda al(cid:213)nm(cid:213)şt(cid:213)r.
+Kay(cid:213)t Dondurma Bilgileri
+2020 - 2021 Güz Dönemi
+2020 - 2021 Bahar Dönemi
