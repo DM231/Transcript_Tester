@@ -87,7 +87,7 @@ REQUIRED_COURSES_BY_SEMESTER = {
                 "required_count": 1,
                 "courses": {
                     "US211": "İş Psikolojisi",
-                    "US215": "Kültür Tarihi",
+                    "US215": "Kultur Tarihi",
                     "US217": "Sanat Tarihi",
                     "US219": "Sivil Toplum Organizasyonları",
                     "US221": "Uygarlık Tarihi",
@@ -178,7 +178,7 @@ REQUIRED_COURSES_BY_SEMESTER = {
                     "BM429": "Optimizasyon",
                     "BM433": "Sayısal İşaret İşleme",
                     "BM447": "Sayısal Görüntü İşleme",
-                    "BM480": "Derin Öğrenme",
+                    "BM480": "Derin Öğrenمه",
                     "BM455": "Bulanık Mantığa Giriş",
                     "BM437": "Yapay Zeka",
                     "BM489": "Programlanabilir Mantık Denetleyiciler",
@@ -192,11 +192,11 @@ REQUIRED_COURSES_BY_SEMESTER = {
                     "BM485": "Dosya Organizasyonu",
                     "BM486": "Sayısal Sistem Tasarım",
                     "BM487": "Nesnelerin İnterneti",
-                    "BM488": "Veri Analizi ve Tahminleme Yöntemleri",
+                    "BM488": "Verي Analizi ve Tahminleme Yöntemleri",
                     "BM490": "Bilgi Güvenliği",
                     "BM491": "Sistem Biyolojisi",
                     "BM492": "Tıbbi İstatistik ve Tıp Bilimine Giriş",
-                    "BM493": "Veri İletişimi",
+                    "BM493": "Verي İletişimi",
                     "BM494": "Kablosuz Haberleşme",
                     "BM495": "İleri Gömülü Sistem Uygulamaları",
                     "BM422": "Biyobilişime Giriş",
@@ -206,9 +206,9 @@ REQUIRED_COURSES_BY_SEMESTER = {
                     "BM475": "Kurumsal Java",
                     "BM479": "Kompleks Ağ Analizi",
                     "BM423": "Bulanık Mantık ve Yapay Sinir Ağlarına Giriş",
-                    "BM435": "Veri Madenciliği",
+                    "BM435": "Verي Madenciliği",
                     "BM463": "İleri Sistem Programlama",
-                    "BM440": "Veri Tabanı Tasarımı ve Uygulamaları",
+                    "BM440": "Verي Tabanı Tasarımı ve Uygulamaları",
                     "BM457": "Bilgisayar Aritmetiği ve Otomata",
                     "BM442": "Görsel Programlama",
                     "BM430": "Proje Yönetimi",
@@ -217,18 +217,18 @@ REQUIRED_COURSES_BY_SEMESTER = {
                     "BM451": "Kontrol Sistemlerine Giriş",
                     "BM432": "Robotik",
                     "BM434": "Sayısal Kontrol Sistemleri",
-                    "BM465": "Mikrodenetleyiciler ve Uygulamaları",
+                    "BM465": "Mikroدنetleyiciler ve Uygulamaları",
                     "BM420": "Bilgisayar Mimarileri",
-                    "BM431": "Örüntü Tanıma",
+                    "BM431": "Örüntü Tanıما",
                     "BM426": "Gerçek Zamanlı Ağ Sistemleri",
                     "BM436": "Sistem Simülasyonu",
-                    "BM461": "Coğrafi Bilgi Sistemleri",
+                    "BM461": "Coğrafي Bilgi Sistemleri",
                     "BM474": "ERP Uygulamaları",
-                    "BM427": "İnternet Mühendisliği",
+                    "BM427": "İنternet Mühendisliği",
                     "BM453": "İçerik Yönetim Sistemleri",
                     "BM439": "Bilgisayar Görmesi",
                     "BM425": "Erp Sistemleri",
-                    "BM473": "Karar Destek Sistemleri",
+                    "BM473": "Karار Destek Sistemleri",
                     "BM443": "Mobil Programlama",
                     "BM445": "Java Programlama",
                     "BM470": "İleri Java Programlama",
@@ -255,7 +255,7 @@ REQUIRED_COURSES_BY_SEMESTER = {
                     "BM429": "Optimizasyon",
                     "BM433": "Sayısal İşaret İşleme",
                     "BM447": "Sayısal Görüntü İşleme",
-                    "BM480": "Derin Öğrenme",
+                    "BM480": "Derin Öğrenمه",
                     "BM455": "Bulanık Mantığa Giriş",
                     "BM437": "Yapay Zeka",
                     "BM489": "Programlanabilir Mantık Denetleyiciler",
@@ -269,11 +269,11 @@ REQUIRED_COURSES_BY_SEMESTER = {
                     "BM485": "Dosya Organizasyonu",
                     "BM486": "Sayısal Sistem Tasarım",
                     "BM487": "Nesnelerin İnterneti",
-                    "BM488": "Veri Analizi ve Tahminleme Yöntemleri",
+                    "BM488": "Verي Analizi ve Tahminleme Yöntemleri",
                     "BM490": "Bilgi Güvenliği",
                     "BM491": "Sistem Biyolojisi",
                     "BM492": "Tıbbi İstatistik ve Tıp Bilimine Giriş",
-                    "BM493": "Veri İletişimi",
+                    "BM493": "Verي İletişimi",
                     "BM494": "Kablosuz Haberleşme",
                     "BM495": "İleri Gömülü Sistem Uygulamaları",
                     "BM422": "Biyobilişime Giriş",
@@ -283,9 +283,9 @@ REQUIRED_COURSES_BY_SEMESTER = {
                     "BM475": "Kurumsal Java",
                     "BM479": "Kompleks Ağ Analizi",
                     "BM423": "Bulanık Mantık ve Yapay Sinir Ağlarına Giriş",
-                    "BM435": "Veri Madenciliği",
+                    "BM435": "Verي Madenciliği",
                     "BM463": "İleri Sistem Programlama",
-                    "BM440": "Veri Tabanı Tasarımı ve Uygulamaları",
+                    "BM440": "Verي Tabanı Tasarımı ve Uygulamaları",
                     "BM457": "Bilgisayar Aritmetiği ve Otomata",
                     "BM442": "Görsel Programlama",
                     "BM430": "Proje Yönetimi",
@@ -294,18 +294,18 @@ REQUIRED_COURSES_BY_SEMESTER = {
                     "BM451": "Kontrol Sistemlerine Giriş",
                     "BM432": "Robotik",
                     "BM434": "Sayısal Kontrol Sistemleri",
-                    "BM465": "Mikrodenetleyiciler ve Uygulamaları",
+                    "BM465": "Mikroدنetleyiciler ve Uygulamaları",
                     "BM420": "Bilgisayar Mimarileri",
                     "BM431": "Örüntü Tanıما",
                     "BM426": "Gerçek Zamanlı Ağ Sistemleri",
                     "BM436": "Sistem Simülasyonu",
-                    "BM461": "Coğrafi Bilgi Sistemleri",
+                    "BM461": "Coğrafي Bilgi Sistemleri",
                     "BM474": "ERP Uygulamaları",
                     "BM427": "İنternet Mühendisliği",
                     "BM453": "İçerik Yönetim Sistemleri",
                     "BM439": "Bilgisayar Görmesi",
                     "BM425": "Erp Sistemleri",
-                    "BM473": "Karar Destek Sistemleri",
+                    "BM473": "Karار Destek Sistemleri",
                     "BM443": "Mobil Programlama",
                     "BM445": "Java Programlama",
                     "BM470": "İleri Java Programlama",
@@ -373,27 +373,9 @@ def check_akts(text):
 
 def extract_courses_from_text(text):
     patterns = [
-        r'(BM\d{3})\s+(.+?)\s+(?:[0-9]+\.[0-9]+\s+){2}([A-Z]{2}|YT|YZ)',
-        r'(AIB\d{3})\s+(.+?)\s+(?:[0-9]+\.[0-9]+\s+){2}([A-Z]{2})',
-        r'(TDB\d{3})\s+(.+?)\s+(?:[0-9]+\.[0-9]+\s+){2}([A-Z]{2})',
-        r'(FIZ\d{3})\s+(.+?)\s+(?:[0-9]+\.[0-9]+\s+){2}([A-Z]{2})',
-        r'(MAT\d{3})\s+(.+?)\s+(?:[0-9]+\.[0-9]+\s+){2}([A-Z]{2})',
-        r'(ING\d{3})\s+(.+?)\s+(?:[0-9]+\.[0-9]+\s+){2}([A-Z]{2})',
-        r'(KRP\d{3})\s+(.+?)\s+(?:[0-9]+\.[0-9]+\s+){2}([A-Z]{2})',
-        r'(US\d{3})\s+(.+?)\s+(?:[0-9]+\.[0-9]+\s+){2}([A-Z]{2})',
-        r'(MS\d{3})\s+(.+?)\s+(?:[0-9]+\.[0-9]+\s+){2}([A-Z]{2})',
-        r'(MTH\d{3})\s+(.+?)\s+(?:[0-9]+\.[0-9]+\s+){2}([A-Z]{2})',
-        r'(BM\d{3})\s+(.+?)\s+([A-Z]{2}|YT|YZ)',
-        r'(AIB\d{3})\s+(.+?)\s+([A-Z]{2})',
-        r'(TDB\d{3})\s+(.+?)\s+([A-Z]{2})',
-        r'(FIZ\d{3})\s+(.+?)\s+([A-Z]{2})',
-        r'(MAT\d{3})\s+(.+?)\s+([A-Z]{2})',
-        r'(ING\d{3})\s+(.+?)\s+([A-Z]{2})',
-        r'(KRP\d{3})\s+(.+?)\s+([A-Z]{2})',
-        r'(US\d{3})\s+(.+?)\s+([A-Z]{2})',
-        r'(MS\d{3})\s+(.+?)\s+([A-Z]{2})',
-        r'(MTH\d{3})\s+(.+?)\s+([A-Z]{2})',
-        r'(BM\d{3}|AIB\d{3}|TDB\d{3}|FIZ\d{3}|MAT\d{3}|ING\d{3}|KRP\d{3}|US\d{3}|MS\d{3}|MTH\d{3})\s+(.+?)\s+(?:[0-9]+\.[0-9]+\s+){0,2}([A-Z]{2}|YT|YZ)',
+        r'(BM\d{3}|AIB\d{3}|TDB\d{3}|FIZ\d{3}|MAT\d{3}|ING\d{3}|KRP\d{3}|US\d{3}|MS\d{3}|MTH\d{3})\s+(.+?)\s+(?:[0-9]+\.[0-9]+\s+){2}([A-Z]{2}|YT|YZ)',
+        r'(BM\d{3}|AIB\d{3}|TDB\d{3}|FIZ\d{3}|MAT\d{3}|ING\d{3}|KRP\d{3}|US\d{3}|MS\d{3}|MTH\d{3})\s+(.+?)\s+([A-Z]{2}|YT|YZ)',
+        r'(MTH401)\s+(.+?)\s+(?:[0-9]+\.[0-9]+\s+){0,2}([A-Z]{2}|YT|YZ)',
     ]
 
     combined_pattern = '|'.join(patterns)
@@ -413,83 +395,10 @@ def extract_courses_from_text(text):
             course_code = match.group(7)
             course_name = match.group(8).strip()
             grade = match.group(9)
-        elif match.group(10):
-            course_code = match.group(10)
-            course_name = match.group(11).strip()
-            grade = match.group(12)
-        elif match.group(13):
-            course_code = match.group(13)
-            course_name = match.group(14).strip()
-            grade = match.group(15)
-        elif match.group(16):
-            course_code = match.group(16)
-            course_name = match.group(17).strip()
-            grade = match.group(18)
-        elif match.group(19):
-            course_code = match.group(19)
-            course_name = match.group(20).strip()
-            grade = match.group(21)
-        elif match.group(22):
-            course_code = match.group(22)
-            course_name = match.group(23).strip()
-            grade = match.group(24)
-        elif match.group(25):
-            course_code = match.group(25)
-            course_name = match.group(26).strip()
-            grade = match.group(27)
-        elif match.group(28):
-            course_code = match.group(28)
-            course_name = match.group(29).strip()
-            grade = match.group(30)
-        elif match.group(31):
-            course_code = match.group(31)
-            course_name = match.group(32).strip()
-            grade = match.group(33)
-        elif match.group(34):
-            course_code = match.group(34)
-            course_name = match.group(35).strip()
-            grade = match.group(36)
-        elif match.group(37):
-            course_code = match.group(37)
-            course_name = match.group(38).strip()
-            grade = match.group(39)
-        elif match.group(40):
-            course_code = match.group(40)
-            course_name = match.group(41).strip()
-            grade = match.group(42)
-        elif match.group(43):
-            course_code = match.group(43)
-            course_name = match.group(44).strip()
-            grade = match.group(45)
-        elif match.group(46):
-            course_code = match.group(46)
-            course_name = match.group(47).strip()
-            grade = match.group(48)
-        elif match.group(49):
-            course_code = match.group(49)
-            course_name = match.group(50).strip()
-            grade = match.group(51)
-        elif match.group(52):
-            course_code = match.group(52)
-            course_name = match.group(53).strip()
-            grade = match.group(54)
-        elif match.group(55):
-            course_code = match.group(55)
-            course_name = match.group(56).strip()
-            grade = match.group(57)
-        elif match.group(58):
-            course_code = match.group(58)
-            course_name = match.group(59).strip()
-            grade = match.group(60)
-        elif match.group(61):
-            course_code = match.group(61)
-            course_name = match.group(62).strip()
-            grade = match.group(63)
 
         course_name = re.sub(r'\d+\.\d+\s+\d+\.\d+', '', course_name).strip()
         course_name = re.sub(r'[:]', '', course_name).strip()
 
-        # التحقق من استخراج المادة MTH401
         if course_code == "MTH401":
             print(f"تم استخراج المادة: {course_code} - {course_name} - {grade}")
 
@@ -515,7 +424,6 @@ def extract_courses_from_text(text):
                 if grade_match:
                     grade = grade_match.group(1)
                     if not any(course['code'] == course_code for course in courses):
-                        # التحقق من استخراج المادة MTH401
                         if course_code == "MTH401":
                             print(f"تم استخراج المادة (نمط بديل): {course_code} - {course_name} - {grade}")
                         courses.append({
@@ -550,34 +458,31 @@ def extract_courses_from_text(text):
 
     mandatory_courses_7_8 = {"BM401", "BM499", "BM498"}
 
-    # لتتبع المواد الاختيارية المجتازة للفصلين 7 و8 فقط لتجنب التكرار في الإجمالي
-    passed_electives_bm_total = set()  # لتتبع المواد المجتازة من BM أو MTH عبر الفصلين 7 و8
+    passed_electives_bm_total = set()
     passed_elective_bm_7 = 0
     passed_elective_bm_8 = 0
 
-    # التحقق من المواد الإجبارية والاختيارية لكل فصل مع تخزين الحالة
     for semester, requirements in REQUIRED_COURSES_BY_SEMESTER.items():
         semester_course_status[semester] = {"mandatory": {}, "elective": {}}
 
-        # الدروس الإجبارية
         for course_code, course_name in requirements["mandatory"].items():
             found = False
             for course in courses:
                 if course["code"] == course_code:
                     found = True
-                    status = "Başarılı" if course["grade"] != "FF" else "Başarısız"
+                    status = "Başarılı" if course["grade"] not in ["FF", "FD"] else "Başarısız"
                     semester_course_status[semester]["mandatory"][course_code] = {
                         "name": course_name,
                         "status": status,
                         "grade": course["grade"]
                     }
-                    if course["grade"] == "FF":
+                    if course["grade"] in ["FF", "FD"]:
                         failed_courses.append({
                             "semester": semester,
                             "code": course_code,
                             "name": course_name,
-                            "grade": "FF",
-                            "message": f"{semester} içinde '{course_name}' dersi FF ile başarısız."
+                            "grade": course["grade"],
+                            "message": f"{semester} içinde '{course_name}' dersi {course['grade']} ile başarısız."
                         })
                     break
             if not found:
@@ -591,10 +496,9 @@ def extract_courses_from_text(text):
                     "code": course_code,
                     "name": course_name,
                     "grade": "Alınmadı",
-                    "message": f"{semester} içinde '{course_name}' dersi eksik."
+                    "message": f"{semester} içinde '{course_name}' dersi alınmadı."
                 })
 
-        # الدروس الاختيارية
         for elective_code, elective_info in requirements["elective"].items():
             prefix = elective_info["prefix"]
             required_count = elective_info["required_count"]
@@ -602,22 +506,21 @@ def extract_courses_from_text(text):
 
             passed_count = 0
             failed_in_elective = []
-            taken_electives = []  # لتخزين المواد الاختيارية التي تم أخذها
+            taken_electives = []
 
             for course in courses:
-                # التحقق من المواد الاختيارية بناءً على الـ prefix أو MTH للفصلين 7 و8
                 if semester in ["7. Yarıyıl", "8. Yarıyıl"]:
                     if (course["code"].startswith("BM") or course["code"].startswith("MTH")) and course["code"] in elective_courses:
                         if course["code"] in mandatory_courses_7_8:
                             continue
-                        status = "Başarılı" if course["grade"] != "FF" else "Başarısız"
+                        status = "Başarılı" if course["grade"] not in ["FF", "FD"] else "Başarısız"
                         taken_electives.append({
                             "code": course["code"],
                             "name": elective_courses[course["code"]],
                             "status": status,
                             "grade": course["grade"]
                         })
-                        if course["grade"] != "FF":
+                        if course["grade"] not in ["FF", "FD"]:
                             passed_count += 1
                             if semester == "7. Yarıyıl":
                                 passed_elective_bm_7 += 1
@@ -630,27 +533,27 @@ def extract_courses_from_text(text):
                                 "semester": semester,
                                 "code": course["code"],
                                 "name": elective_courses[course["code"]],
-                                "grade": "FF",
-                                "message": f"{semester} içinde '{elective_courses[course['code']]}' seçmeli dersi FF ile başarısız."
+                                "grade": course["grade"],
+                                "message": f"{semester} içinde '{elective_courses[course['code']]}' seçmeli dersi {course['grade']} ile başarısız."
                             })
                 else:
                     if course["code"].startswith(prefix) and course["code"] in elective_courses:
-                        status = "Başarılı" if course["grade"] != "FF" else "Başarısız"
+                        status = "Başarılı" if course["grade"] not in ["FF", "FD"] else "Başarısız"
                         taken_electives.append({
                             "code": course["code"],
                             "name": elective_courses[course["code"]],
                             "status": status,
                             "grade": course["grade"]
                         })
-                        if course["grade"] != "FF":
+                        if course["grade"] not in ["FF", "FD"]:
                             passed_count += 1
                         else:
                             failed_in_elective.append({
                                 "semester": semester,
                                 "code": course["code"],
                                 "name": elective_courses[course["code"]],
-                                "grade": "FF",
-                                "message": f"{semester} içinde '{elective_courses[course['code']]}' seçmeli dersi FF ile başarısız."
+                                "grade": course["grade"],
+                                "message": f"{semester} içinde '{elective_courses[course['code']]}' seçmeli dersi {course['grade']} ile başarısız."
                             })
 
             semester_course_status[semester]["elective"] = {
@@ -673,7 +576,6 @@ def extract_courses_from_text(text):
                         "message": f"{semester} için {required_count} adet {prefix} ile başlayan seçmeli ders geçmeniz gerekiyor, ancak sadece {passed_count} tanesi geçildi."
                     })
 
-    # التحقق من مجموع المواد الاختيارية للفصل السابع والثامن (BM و MTH)
     total_passed_elective_bm = len(passed_electives_bm_total)
     required_total_elective_bm = 10
     if total_passed_elective_bm < required_total_elective_bm:
@@ -690,34 +592,48 @@ def extract_courses_from_text(text):
         "required_total_elective_bm": required_total_elective_bm
     }
 
-    # التحقق من شروط التخرج
+    # التحقق من شروط التخرج وتجميع الأسباب في فئات
     graduation_status = {
         "is_eligible": False,
-        "message": ""
+        "message": "",
+        "mandatory_issues": [],
+        "elective_issues": [],
+        "gpa_issue": None,
+        "akts_issues": []
     }
 
-    # الشرط الأول: اجتياز جميع المواد الإجبارية والاختيارية
-    courses_condition = len(failed_courses) == 0 and len(failed_elective_requirements) == 0
+    # الدروس الإجبارية (فشل أو نقص)
+    mandatory_failed_or_missing = [course for course in failed_courses if course["code"] in sum([list(req["mandatory"].keys()) for req in REQUIRED_COURSES_BY_SEMESTER.values()], [])]
+    for course in mandatory_failed_or_missing:
+        if course["grade"] == "Alınmadı":
+            # الدرس لم يُؤخذ
+            graduation_status["mandatory_issues"].append(f"{course['semester']} döneminde '{course['name']}' dersi alınmadı.")
+        else:
+            # الدرس أُخذ ورسب فيه
+            graduation_status["mandatory_issues"].append(f"{course['semester']} döneminde '{course['name']}' dersinden {course['grade']} ile başarısız oldunuz.")
 
-    # الشرط الثاني: المعدل العام أعلى من 2.50
-    gpa_condition = gpa is not None and gpa >= 2.50
+    # نقص في المواد الاختيارية
+    for issue in failed_elective_requirements:
+        semester = issue["semester"]
+        if semester in ["7. Yarıyıl", "8. Yarıyıl", "7. ve 8. Yarıyıl"]:
+            graduation_status["elective_issues"].append(f"4. sınıfta (7. ve 8. Yarıyıl) seçmeli derslerde eksiklik var: {issue['message']}")
+        else:
+            graduation_status["elective_issues"].append(f"{semester} döneminde seçmeli derslerde eksiklik var: {issue['message']}")
 
-    # الشرط الثالث: عدد AKTS مكتمل
-    akts_condition = len(akts_warnings) == 0
+    # المعدل العام (GPA)
+    if gpa is None:
+        graduation_status["gpa_issue"] = "Genel Not Ortalaması hesaplanamadı (dosyada bulunamadı)."
+    elif gpa < 2.50:
+        graduation_status["gpa_issue"] = f"Genel Not Ortalamanız ({gpa:.2f}) 2.50'nin altında."
 
-    # التحقق من جميع الشروط
-    if courses_condition and gpa_condition and akts_condition:
+    # نقص AKTS
+    for akts_issue in akts_warnings:
+        graduation_status["akts_issues"].append(f"{akts_issue['semester']} döneminde AKTS eksikliği var: {akts_issue['message']}")
+
+    # تحديد حالة التخرج
+    if not (graduation_status["mandatory_issues"] or graduation_status["elective_issues"] or graduation_status["gpa_issue"] or graduation_status["akts_issues"]):
         graduation_status["is_eligible"] = True
         graduation_status["message"] = "Tebrikler! Tüm mezuniyet şartlarını karşılıyorsunuz. Mezun olmaya hak kazandınız!"
-    else:
-        reasons = []
-        if not courses_condition:
-            reasons.append("Bazı zorunlu veya seçmeli derslerde eksiklik veya başarısızlık var.")
-        if not gpa_condition:
-            reasons.append(f"Genel Not Ortalaması ({gpa if gpa is not None else 'Bilinmiyor'}) 2.50'nin altında.")
-        if not akts_condition:
-            reasons.append("AKTS eksikliği mevcut.")
-        graduation_status["message"] = "Mezuniyet şartlarını karşılamıyorsunuz. Eksiklikler: " + ", ".join(reasons)
 
     return courses, failed_courses, failed_elective_requirements, gpa, gpa_requirements, akts_warnings, elective_bm_summary, semester_course_status, graduation_status
 
@@ -739,7 +655,7 @@ def upload_file():
         try:
             file.save(file_path)
         except PermissionError as e:
-            return f"Dosya kaydetme hatası: {str(e)}. Yazma izninizin olduğundan emin olun."
+            return f"Dosya kaydetme hatası: {str(e)}. Yazما izninizin olduğundan emin olun."
 
         text = extract_text_from_docx(file_path)
         text = clean_text(text)
