@@ -5,7 +5,7 @@ import os
 
 app = Flask(__name__)
 
-UPLOAD_FOLDER = os.path.join(os.path.expanduser('~'), 'Desktop', 'uploads')
+UPLOAD_FOLDER = os.path.join(os.path.expanduser('~'), 'Desktop', 'Uploads')
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 if not os.path.exists(UPLOAD_FOLDER):
@@ -233,7 +233,7 @@ REQUIRED_COURSES_BY_SEMESTER = {
                     "BM445": "Java Programlama",
                     "BM470": "İleri Java Programlama",
                     "BM496": "Bilgi Mühendisliği ve Büyük Veriye Giriş",
-                    "BM421": "Bilgisayar Grafiği",
+                    "BM421": "Bilgisayar Grafیği",
                     "BM477": "Graf Teorisi",
                     "BM444": "Yazılım Tasarım Kalıpları",
                     "BM467": "Kodlama Teorisi ve Kriptografi",
@@ -310,7 +310,7 @@ REQUIRED_COURSES_BY_SEMESTER = {
                     "BM445": "Java Programlama",
                     "BM470": "İleri Java Programlama",
                     "BM496": "Bilgi Mühendisliği ve Büyük Veriye Giriş",
-                    "BM421": "Bilgisayar Grafiği",
+                    "BM421": "Bilgisayar Grafیği",
                     "BM477": "Graf Teorisi",
                     "BM444": "Yazılım Tasarım Kalıpları",
                     "BM467": "Kodlama Teorisi ve Kriptografi",
@@ -462,6 +462,18 @@ def extract_courses_from_text(text):
     passed_elective_bm_7 = 0
     passed_elective_bm_8 = 0
 
+    graduation_status = {
+        "is_eligible": False,
+        "message": "",
+        "mandatory_issues": [],
+        "elective_issues": [],
+        "gpa_issue": None,
+        "akts_issues": []
+    }
+
+    # تتبع الدروس الراسبة لتجنب التكرار
+    failed_elective_courses = set()
+
     for semester, requirements in REQUIRED_COURSES_BY_SEMESTER.items():
         semester_course_status[semester] = {"mandatory": {}, "elective": {}}
 
@@ -555,6 +567,15 @@ def extract_courses_from_text(text):
                                 "grade": course["grade"],
                                 "message": f"{semester} içinde '{elective_courses[course['code']]}' seçmeli dersi {course['grade']} ile başarısız."
                             })
+                            # إضافة الدروس الاختيارية الراسبة التي تبدأ بـ US أو MS فقط إلى elective_issues
+                            # مع تجنب التكرار وإعطاء الأولوية للفصل الرابع لدروس US
+                            if prefix in ["US", "MS"] and course["code"] not in failed_elective_courses:
+                                if prefix == "US" and semester == "3. Yarıyıl" and course["code"] in REQUIRED_COURSES_BY_SEMESTER["4. Yarıyıl"]["elective"]["SECSOS4YY"]["courses"]:
+                                    continue  # تخطي الفصل الثالث إذا كان الدرس موجودًا في الفصل الرابع
+                                failed_elective_courses.add(course["code"])
+                                graduation_status["elective_issues"].append(
+                                    f"{semester} döneminde '{elective_courses[course['code']]}' seçmeli dersinden {course['grade']} ile başarısız oldunuz."
+                                )
 
             semester_course_status[semester]["elective"] = {
                 "required_count": required_count,
@@ -584,6 +605,9 @@ def extract_courses_from_text(text):
             "semester": "7. ve 8. Yarıyıl",
             "message": f"7. ve 8. Yarıyıl için toplam {required_total_elective_bm} adet BM veya MTH ile başlayan seçmeli ders geçmeniz gerekiyor, ancak sadece {total_passed_elective_bm} tanesi geçildi. {remaining} ders daha geçmeniz gerekiyor."
         })
+        graduation_status["elective_issues"].append(
+            f"7. ve 8. Yarıyıl için toplam {required_total_elective_bm} adet BM veya MTH ile başlayan seçmeli ders geçmeniz gerekiyor, ancak sadece {total_passed_elective_bm} tanesi geçildi. {remaining} ders daha geçmeniz gerekiyor."
+        )
 
     elective_bm_summary = {
         "passed_elective_bm_7": passed_elective_bm_7,
@@ -593,44 +617,21 @@ def extract_courses_from_text(text):
     }
 
     # التحقق من شروط التخرج وتجميع الأسباب في فئات
-    graduation_status = {
-        "is_eligible": False,
-        "message": "",
-        "mandatory_issues": [],
-        "elective_issues": [],
-        "gpa_issue": None,
-        "akts_issues": []
-    }
-
-    # الدروس الإجبارية (فشل أو نقص)
     mandatory_failed_or_missing = [course for course in failed_courses if course["code"] in sum([list(req["mandatory"].keys()) for req in REQUIRED_COURSES_BY_SEMESTER.values()], [])]
     for course in mandatory_failed_or_missing:
         if course["grade"] == "Alınmadı":
-            # الدرس لم يُؤخذ
             graduation_status["mandatory_issues"].append(f"{course['semester']} döneminde '{course['name']}' dersi alınmadı.")
         else:
-            # الدرس أُخذ ورسب فيه
             graduation_status["mandatory_issues"].append(f"{course['semester']} döneminde '{course['name']}' dersinden {course['grade']} ile başarısız oldunuz.")
 
-    # نقص في المواد الاختيارية
-    for issue in failed_elective_requirements:
-        semester = issue["semester"]
-        if semester in ["7. Yarıyıl", "8. Yarıyıl", "7. ve 8. Yarıyıl"]:
-            graduation_status["elective_issues"].append(f"4. sınıfta (7. ve 8. Yarıyıl) seçmeli derslerde eksiklik var: {issue['message']}")
-        else:
-            graduation_status["elective_issues"].append(f"{semester} döneminde seçmeli derslerde eksiklik var: {issue['message']}")
-
-    # المعدل العام (GPA)
     if gpa is None:
         graduation_status["gpa_issue"] = "Genel Not Ortalaması hesaplanamadı (dosyada bulunamadı)."
     elif gpa < 2.50:
         graduation_status["gpa_issue"] = f"Genel Not Ortalamanız ({gpa:.2f}) 2.50'nin altında."
 
-    # نقص AKTS
     for akts_issue in akts_warnings:
         graduation_status["akts_issues"].append(f"{akts_issue['semester']} döneminde AKTS eksikliği var: {akts_issue['message']}")
 
-    # تحديد حالة التخرج
     if not (graduation_status["mandatory_issues"] or graduation_status["elective_issues"] or graduation_status["gpa_issue"] or graduation_status["akts_issues"]):
         graduation_status["is_eligible"] = True
         graduation_status["message"] = "Tebrikler! Tüm mezuniyet şartlarını karşılıyorsunuz. Mezun olmaya hak kazandınız!"
@@ -655,7 +656,7 @@ def upload_file():
         try:
             file.save(file_path)
         except PermissionError as e:
-            return f"Dosya kaydetme hatası: {str(e)}. Yazما izninizin olduğundan emin olun."
+            return f"Dosya kaydetme hatası: {str(e)}. Yazma izنiniz olduğundan emin olun."
 
         text = extract_text_from_docx(file_path)
         text = clean_text(text)
