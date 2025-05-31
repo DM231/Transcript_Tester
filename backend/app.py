@@ -748,9 +748,9 @@ def extract_courses_from_text(text):
         graduation_status["is_eligible"] = False
         if completed_semesters > 0:
             graduation_status[
-                "message"] = f"Henüz mezuniyet için gerekli tüm دورهleri tamamlamادınız. {completed_semesters}/8 دوره tamamlandı."
+                "message"] = f"Henüz mezuniyet için gerekli tüm dönemleri tamamlamadınız. {completed_semesters}/8 dönem tamamlandı."
         else:
-            graduation_status["message"] = "Henüz hiç دوره tamamlanmamış."
+            graduation_status["message"] = "Henüz hiç dönem tamamlanmamış."
 
     return courses, failed_courses, failed_elective_requirements, gpa, gpa_requirements, akts_warnings, elective_bm_summary, semester_course_status, graduation_status
 
